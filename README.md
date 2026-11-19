@@ -23,7 +23,7 @@ SATSET merupakan layanan kurir area kampus yang menyediakan jasa pengiriman doku
 - Tampilan responsif untuk komputer dan ponsel.
 
 ## Link Website
-Akan diisi setelah GitHub Pages berhasil diaktifkan.
+(https://ayeshaasra27.github.io/satset-jasaantar-klp6/)
 
 ## Anggota Kelompok
 
