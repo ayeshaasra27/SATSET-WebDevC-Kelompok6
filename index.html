@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATSET - Layanan Kurir Area Kampus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header-section" data-role="CEO">
+        <div class="container navbar">
+            <a href="#" class="logo">SATSET <span>⚡</span></a>
+
+            <nav>
+                <a href="#hero-section">Beranda</a>
+                <a href="#catalog-section">Layanan</a>
+                <a href="#calc-section">Hitung Harga</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="hero-section" data-role="PM">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">KURIR CEPAT AREA KAMPUS</p>
+
+                    <h1>Butuh apa?<br> <span>SatSet-in aja!</span></h1>
+
+                    <p>
+                        Nggak sempat keluar? Tenang, SATSET siap bantu
+                        kirim dokumen, beliin makanan, sampai angkut
+                        barang kost. Praktis, cepat, dan nggak ribet!
+                    </p>
+
+                    <a href="#catalog-section" class="btn-primary">
+                        Lihat Layanan Kami →
+                    </a>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-emoji">🛵</div>
+                    <p>SatSet sampai tujuan!</p>
+                </div>
+            </div>
+
+            <div class="container benefits">
+                <div class="benefit-item">
+                    <span>⚡</span>
+                    <p>Cepat dan praktis</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span>📍</span>
+                    <p>Khusus area kampus</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span>💸</span>
+                    <p>Harga transparan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATALOG SECTION -->
+        <section id="catalog-section" data-role="PM">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">PILIH SESUAI KEBUTUHANMU</p>
+                    <h2>Layanan Andalan <span>SATSET!</span></h2>
+                    <p>Satu tempat untuk berbagai kebutuhanmu di area kampus.</p>
+                </div>
+
+                <div class="service-grid">
+
+                    <div class="service-card">
+                        <div class="service-icon">📄</div>
+                        <h3>SATSET DOCS</h3>
+                        <p>
+                            Layanan pengiriman dokumen dan berkas
+                            dengan cepat dan aman ke tujuan.
+                        </p>
+                        <p class="price">Rp3.000 <span>/ km</span></p>
+                        <a href="#calc-section" class="btn-secondary">
+                            Hitung Harga
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🍜</div>
+                        <h3>SATSET JAJAN</h3>
+                        <p>
+                            Titip beli makanan dan minuman favorit
+                            tanpa harus keluar dari kampus.
+                        </p>
+                        <p class="price">Rp5.000 <span>/ km</span></p>
+                        <a href="#calc-section" class="btn-secondary">
+                            Hitung Harga
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📦</div>
+                        <h3>SATSET ANGKUT</h3>
+                        <p>
+                            Bantuan angkut dan pindah barang kost
+                            agar urusanmu jadi lebih mudah.
+                        </p>
+                        <p class="price">Rp8.000 <span>/ km</span></p>
+                        <a href="#calc-section" class="btn-secondary">
+                            Hitung Harga
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="promo-info">
+                    🎉 Pakai kode promo <strong>SATSET10</strong>
+                    untuk mendapatkan diskon 10%!
+                </div>
+            </div>
+        </section>
+
+        <!-- CALCULATOR SECTION -->
+        <section id="calc-section" data-role="SE">
+            <div class="container calculator-container">
+                <div class="section-heading">
+                    <p class="eyebrow">CEK BIAYA PENGIRIMAN</p>
+                    <h2>Hitung Harga <span>SATSET</span></h2>
+                    <p>Masukkan layanan dan jarak pengiriman untuk mengetahui estimasi biaya.</p>
+                </div>
+
+                <div class="calculator-card">
+                    <div class="form-group">
+                        <label for="service">Pilih Layanan</label>
+                        <select id="service">
+                            <option value="">-- Pilih layanan --</option>
+                            <option value="3000">SATSET DOCS - Rp3.000/km</option>
+                            <option value="5000">SATSET JAJAN - Rp5.000/km</option>
+                            <option value="8000">SATSET ANGKUT - Rp8.000/km</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="distance">Jarak Pengiriman (km)</label>
+                        <input
+                            type="number"
+                            id="distance"
+                            min="1"
+                            step="0.1"
+                            placeholder="Contoh: 4"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promo">Kode Promo</label>
+                        <input
+                            type="text"
+                            id="promo"
+                            placeholder="Masukkan SATSET10"
+                        >
+                    </div>
+
+                    <button type="button" id="calculateBtn" class="btn-primary">
+                        Hitung Sekarang ⚡
+                    </button>
+
+                    <div id="result" class="result-box">
+                        <p>Hasil perhitungan akan muncul di sini.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer-section" data-role="CEO">
+        <div class="container">
+            <div class="footer-brand">
+                <h2>SATSET ⚡</h2>
+                <p>Butuh apa? SatSet-in aja!</p>
+                <p>Layanan kurir cepat dan titip beli area kampus.</p>
+            </div>
+
+            <div class="team-section">
+                <h3>Tim Pengembang SATSET</h3>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <strong>Ayesha Asra Asmarinda</strong>
+                        <span>1710625143 - CEO</span>
+                    </div>
+
+                    <div class="team-member">
+                        <strong>Gita Marchella</strong>
+                        <span>1710625119 - Product Manager</span>
+                    </div>
+
+                    <div class="team-member">
+                        <strong>Winna Nabilah</strong>
+                        <span>1710625087 - Product Manager</span>
+                    </div>
+
+                    <div class="team-member">
+                        <strong>Aisya Azzahra</strong>
+                        <span>1710625187 - Software Engineer</span>
+                    </div>
+
+                    <div class="team-member">
+                        <strong>Zahira Mazaya Anwar</strong>
+                        <span>1710625051 - Software Engineer</span>
+                    </div>
+
+                    <div class="team-member">
+                        <strong>Siti Arterina Annisa Hasanah</strong>
+                        <span>1710625015 - UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright">
+                © 2026 SATSET. Butuh apa? SatSet-in aja!
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
